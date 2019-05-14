@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="InputFile\Cities.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="InputFile\Cities.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Weather\Weather.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OutputFile\" />
+  </ItemGroup>
+
+</Project>

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{E32E90EF-9A15-44F0-AC9E-74696F050387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather", "Weather\Weather.csproj", "{E32E90EF-9A15-44F0-AC9E-74696F050387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTest", "WeatherTest\WeatherTest.csproj", "{BC08AF63-0002-4369-ACD5-BE8E424B869F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherTest", "WeatherTest\WeatherTest.csproj", "{BC08AF63-0002-4369-ACD5-BE8E424B869F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReaderApplication", "FileReaderApplication\FileReaderApplication.csproj", "{EB6F3BF1-F6C4-4102-9805-2906EA37ECA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BC08AF63-0002-4369-ACD5-BE8E424B869F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC08AF63-0002-4369-ACD5-BE8E424B869F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC08AF63-0002-4369-ACD5-BE8E424B869F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6F3BF1-F6C4-4102-9805-2906EA37ECA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6F3BF1-F6C4-4102-9805-2906EA37ECA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6F3BF1-F6C4-4102-9805-2906EA37ECA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6F3BF1-F6C4-4102-9805-2906EA37ECA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
