@@ -14,6 +14,11 @@ namespace Weather.Controllers
     [ApiController]
     public class WeatherController : ControllerBase
     {
+        /// <summary>
+        /// This Controller gets Weather Information on the bases of City Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: api/Weather/5
         [HttpGet("{id}", Name = "Get")]
         public async Task<WeatherReport> GetWeatherInformation(int id)
