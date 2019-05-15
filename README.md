@@ -16,3 +16,4 @@ Additional Details
 2. Polling can be acheived using Azure logic Apps on Azure.
 3. Restful service implemented is not hosted on Cloud or OnPrem.
 4. Restful Service is implemented using TDD approach.
+5. Application is implemented using .Net Core 2.1 in VS2017 Community Ide.
