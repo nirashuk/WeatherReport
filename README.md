@@ -7,7 +7,7 @@ Instruction to Exceute
 3. Run console application and provide input file's full name with path
 (Format :- C:\Users\nirashuk\source\repos\FileReaderApplication\InputFile\Cities.json)
 4. Provide Output directory's address where City's Weather report will be saved along with city's name and time stamp.
-(Format :- C:\Users\nirashuk\source\repos\FileReaderApplication\Output\)
+(Format :- C:\Users\nirashuk\source\repos\FileReaderApplication\Output\\)
 5. Inspect generated files for more Weather related information.
 
 Additional Details
