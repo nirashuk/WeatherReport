@@ -15,20 +15,6 @@ namespace Weather.Controllers
     [ApiController]
     public class WeatherReportsController : ControllerBase
     {
-        // GET: api/WeatherReports
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/WeatherReports/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST: api/WeatherReports
         [HttpPost]
         public async Task<List<WeatherReport>> PostAsync([FromBody] CityInput cityInput)
@@ -41,7 +27,7 @@ namespace Weather.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(
                     new MediaTypeWithQualityHeaderValue("application/json"));
-                foreach (var city in cityInput.City)
+                foreach (var city in cityInput.Cities)
                 {
                     var response = await client.GetAsync("/data/2.5/weather?id=" + city.id + "&appid=aa69195559bd4f88d79f9aadeb77a8f6");
                     if (response.IsSuccessStatusCode)
@@ -49,25 +35,10 @@ namespace Weather.Controllers
                         WeatherReport weatherReport = new WeatherReport();
                         weatherReport = await response.Content.ReadAsAsync<WeatherReport>();
                         weatherReportList.Add(weatherReport);
-                        //Save this file in JsonFormat in Output Directory
-                        //string json = JsonConvert.SerializeObject(weatherReport);
-                        //System.IO.File.WriteAllText(@"~/Weather/Weather/OutputFile/" + weatherReport.name + DateTime.UtcNow.ToLongDateString() + ".json", json);
                     }
                 }
                 return weatherReportList;
             }
-        }
-
-        // PUT: api/WeatherReports/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

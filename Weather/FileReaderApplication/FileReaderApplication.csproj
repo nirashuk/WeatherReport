@@ -23,4 +23,8 @@
     <Folder Include="OutputFile\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.1" />
+  </ItemGroup>
+
 </Project>

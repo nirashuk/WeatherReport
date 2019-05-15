@@ -13,6 +13,10 @@ namespace Weather.Model
 
     public class CityInput
     {
-        public List<City> City { get; set; }
+        public CityInput()
+        {
+            Cities = new List<City>();
+        }
+        public List<City> Cities { get; set; }
     }
 }
